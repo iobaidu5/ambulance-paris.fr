@@ -1,0 +1,108 @@
+<footer id="pre-contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-sm-12">
+        <p class="text-white"><strong>Ambulance Roquette</strong></p>
+        <p class="text-white footer-p">Ambulance Roquette assure vos transports médicaux en ambulance agréée dans tout Paris et le 11ᵉ arrondissement<br>
+          Nos ambulanciers diplômés veillent à votre confort et à votre sécurité tout au long du trajet, dans des véhicules modernes et équipés.
+          </p>
+          <p class="text-white footer-p">Un service réactif, humain et disponible 24h/24 et 7j/7.</p>
+
+      </div>
+
+      <div class="col-lg-4 col-sm-6">
+        <p class="text-white"><strong>Contactez-nous </strong></p>
+        <form class="form contact_content-form" id="contactForm" method="post"
+        action="{{ site.data.company.url.notify }}">
+        <input type="hidden" name="lang" value="fr" />
+        <input type="hidden" name="redirectUrl" value="{{site.data.company.url.redirect}}" />
+        <input type="hidden" name="type" value="contact" />
+        <input type="hidden" name="website" value="{{ site.data.company.website }}" />
+        <input type="hidden" name="lang" value="{{ site.data.company.lang }}" />
+        <input type="hidden" name="firstName" value="" />
+        <input type="hidden" name="key" value="{{ site.data.company.recaptcha.server }}" />
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="form-group has-feedback">
+                <input type="text" class="form-control " id="name" name="name" value="" placeholder="Nom" required="">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group has-feedback">
+                <input type="text" class="form-control " id="email" name="email" value="" placeholder="E-mail"
+                  required="">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group has-feedback">
+                <input type="text" class="form-control " id="phone" name="telephone" value="" placeholder="Téléphone">
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="form-group has-feedback">
+                <textarea class="form-control" id="message" name="message" rows="3" placeholder="Message"></textarea>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="checkbox d-flex mb-5">
+                <input name="condition" type="checkbox"
+                  style="height:1.22rem; width:1.22rem; vertical-align: middle; margin-right: 1rem;">
+                <span class="contact_content-form--label" style="font-size: .8rem; color: #fff;">
+                  En utilisant ce formulaire, vous acceptez le stockage et la gestion
+                  de vos données par ce site * <a href="#" data-toggle="modal" class="link" data-target="#modal-rgpd"><i
+                      class="fa fa-info-circle"></i></a></span>
+                <i class="fa fa-info-square" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="col-sm-12 text-center">
+              <div id="contact-form-response"></div>
+              <div class="form-group d-flex justify-content-center">
+                <div class="g-recaptcha" data-sitekey="{{ site.data.company.recaptcha.client }}">
+                </div>
+                <br />
+                <input style="display: none" type="submit" value="Submit" class="wpcf7-wpcf7-submit" />
+              </div>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-sm-12 ">
+              <div class="d-flex justify-content-center mx-auto w-100 text-white">
+                <button type="submit" name="precontact" class="btn-one form-submit text-white"> 
+                  <span class="txt">Envoyer</span> </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <p class="text-white"><strong>Nos coordonnées</strong></p>
+        <p class="footer-p">Adresse : {{site.data.company.adress}}</p>
+        <p class="footer-p">Téléphone : <a href="tel:{{site.data.company.tel}}" class="footer-link"> {{site.data.company.phone}}</a></p>
+        <p class="footer-p">E-mail :<a href="mailto:{{site.data.company.email}}" class="footer-link"> {{site.data.company.email}}</a> </p>
+        <p class="footer-p">Nos horaires : 7J/7 – 24H/24 </p>
+        <ul class="social">
+          <li><a href="#" class="fab fa-facebook-f"></a></li>
+          <li><a href="#" class="fab fa-twitter"></a></li>
+          <li><a href="#" class="fab fa-google-plus"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pad02"></div>
+    <div class="text-center pt-3 pb-0">
+      <a href="https://www.bhinternet.fr/" class="footer-link" target="_blank">BHInternet - Création site internet | 2025</a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+<script src="./assets/js/owl.js"></script>
+<script src="./assets/js/aos.js"></script>
+<script src="./assets/js/index.js"></script>
+<script src="./assets/js/formSubmit.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>

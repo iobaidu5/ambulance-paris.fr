@@ -1,0 +1,25 @@
+####################
+# CONFIG
+####################
+name:
+phone: 01 43 46 33 11
+phone2: 
+tel: "0143463311"
+tel2: 
+
+email: "actionambulances@gmail.com"
+email2: ""
+
+address: 20, rue de Wattignies 75012 Paris
+
+websiteAddr: bhinternet.fr
+website: 
+
+recaptcha:
+  client: 6LenjAAsAAAAAHB1nfP6rDTinemBBK-nGT8Y4xg3
+  server: 6LenjAAsAAAAADi0qv45FLhbUAByhFFwAxpSOUpp
+  
+lang: fr
+url:
+  notify: 'https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify'
+  redirect: '/message-envoye'

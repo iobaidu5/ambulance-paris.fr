@@ -1,0 +1,19 @@
+<title>{{ page.title }}</title>
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:locale" content="fr_FR" />
+<meta name="description" content="{{ page.description }}" />
+<meta property="og:description" content="{{ page.description }}" />
+<meta name="keywords" content="{{ page.keywords }}" />
+<link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+<meta property="og:site_name" content="{{ site.data.company.name }}" />
+<meta name="google-site-verification" content="hN4_ituHF27zT8JOJ5muRD3HbDG0U2tbN8-zrOmdhaI" />
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"WebSite",
+"url":"{{ site.url }}{{ page.url }}",
+"description":"{{ page.description }}",
+"name":"{{ page.title }}"
+}
+</script>

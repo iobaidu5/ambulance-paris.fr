@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+{% include head.html %}
+
+<body>
+  {% include navbar.html %}
+
+  {% if page.url == '/' %}
+  {% include slider.html %}
+  {% endif %}
+
+
+  <div class="">
+    {{ content }}
+  </div>
+
+
+  <div class="fixphone">
+    <a href="tel:{{site.data.company.phone}}" title="{{site.data.company.phone2}}" class="one phoneone">
+      <span style="color: #dc3545;"><i class="fas fa-phone-alt"></i> &nbsp;{{site.data.company.phone}}</span>
+    </a>
+  </div>
+
+  {% include footer.html %}
+
+
+  <div class="#fixphone">
+    <a href="#top" class="scroll-top scroll-to-target" data-target="html" style="display: inline-block;">
+      <span style="color: #dc3545;"><i class="fas fa-chevron-up"></i></span>
+    </a>
+  </div>
+
+</body>
+
+</html>
