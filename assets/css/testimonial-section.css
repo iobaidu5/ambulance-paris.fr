@@ -33,7 +33,7 @@
   top: -120px;
   left: 0px;
   bottom: -120px;
-  right: -9999999px;
+  right: -8999950px;
   background: var(--thm-primary);
   z-index: -1;
 }
@@ -56,7 +56,7 @@
   max-width: 480px;
   width: 100%;
   overflow: hidden;
-  margin-left: -50px !important;
+  margin-left: -10px !important;
 }
 
 .single-testimonial-style1 .img-holder:before {
